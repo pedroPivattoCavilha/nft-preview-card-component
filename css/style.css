@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+html {
+    font-family: "Outfit";
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    padding: 1.5rem;
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 40px hsl(216, 50%, 16%, 0.5);
+}
+
+@media (min-width: 500px) {
+    main {
+        max-width: 450px;
+        margin: 0 auto 10px;
+    }
+}
+
+.image-container {
+    display: flex;
+    position: relative;
+    border-radius: 12px;
+}
+
+.image-container .ethereum {
+    border-radius: 10px;
+    align-content: center;
+}
+
+.image-container div {
+    position: absolute;
+    display: flex;
+    background-color: hsl(178, 100%, 50%, 0.3);
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0;
+}
+
+.image-container div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.informations {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: hsl(0, 0%, 100%, 90%);
+    font-weight: 600;
+    margin: 20px 0;
+    width: fit-content;
+    transition: color 250ms;
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.description {
+    color: hsl(215, 51%, 70%, 60%);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.money-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px hsl(215, 32%, 27%) solid;
+}
+
+.money {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.money-text {
+    color: hsl(178, 100%, 50%, 80%);
+    font-weight: 600;
+}
+
+.time {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.time-text {
+    color: hsl(215, 51%, 70%, 60%);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 7px;
+}
+
+.avatar-icon {
+    border: 1px white solid;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.creation {
+    color: hsl(215, 51%, 70%, 60%);
+    font-weight: 400;
+}
+
+.person {
+    color: hsl(0, 0%, 100%, 90%);
+}
+
+.person:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: color 250ms;
+}
